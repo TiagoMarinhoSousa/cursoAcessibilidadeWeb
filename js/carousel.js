@@ -35,7 +35,8 @@ btns.forEach(function(btn) {
               noticias.forEach(function(noticia) {
                 noticia.style.display = 'none';
     
-                if ( this.getAttribute('data-sliderItem') === noticia.getAttribute('data-noticia') ) {
+                if (this.getAttribute('data-sliderItem') == noticia.getAttribute('data-noticia') ) {
+                  console.log(this);
                     noticia.style.display = 'block'
                 }
     
